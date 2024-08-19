@@ -5,14 +5,12 @@ import jakarta.persistence.*;
 import java.time.Period;
 
 @Entity
-@Table
 public class Student {
     @Id
     @SequenceGenerator(
         name = "student_sequance",
         sequenceName = "student_sequance",
         allocationSize = 1
-        
     )
     @GeneratedValue(
         strategy = GenerationType.SEQUENCE,
